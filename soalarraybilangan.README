@@ -1,0 +1,22 @@
+1. Jika isi masing-masing elemen array bil diubah dengan angka 5.0, 12867, 7.5, 2000000.
+   Apa yang terjadi? Mengapa bisa demikian?
+2. Ubah statement pada langkah No 4 menjadi seperti berikut
+    for (int i=0; i < 4; i++) {
+          System.out.println(bil[i]);
+      }
+   Apa keluaran dari program? Jelaskan maksud dari statement tersebut
+3. Jika kondisi pada statement for-loop di atas diubah menjadi: i <= 4, apa keluaran
+   dari program? Mengapa demikian?
+
+   JAWABAN:
+1.error
+2.akan keluar
+   for (int i = 0; i < 4; i++) {
+    System.out.println(bil[i]);
+   }
+  Statement digunakan untuk mengambil dan menampilkan setiap elemen array secara berurutan,
+  tanpa harus menulis System.out.println().
+3.akan keluar:
+  Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 4
+  Karena array bil memiliki 4 elemen:
+

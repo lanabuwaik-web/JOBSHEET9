@@ -1,0 +1,22 @@
+1. Ubah statement pada langkah nomor 5 menjadi seperti berikut ini:
+    for (int i = 0; i < nilaiAkhir.length; i++) {
+            System.out.println("Masukkan nilai akhir ke-"+i+": ");
+            nilaiAkhir[i] = sc.nextInt();
+    }
+   Jalankan program. Apakah terjadi perubahan? Mengapa demikian?
+2. Apa yang dimaksud dengan kondisi: i < nilaiAkhir.length ?
+3. Ubah statement pada langkah nomor 6 menjadi seperti berikut ini, sehingga program
+   hanya menampilkan nilai Mahasiswa yang lulus saja (yaitu mahasiswa yang memiliki nilai
+   > 70):
+          for (int i = 0; i < nilaiAkhir.length; i++) {
+            if (nilaiAkhir[i] >= 70) {
+                System.out.println("Nilai akhir mahasiswa ke-"+i+" adalah: " + nilaiAkhir[i] + " (Lulus)");
+             } }
+    Jalankan program dan jelaskan alur program!
+
+    JAWABAN:
+1. Program tidak berubah hasilnya Karena nilaiAkhir.length juga bernilai 10, sama seperti nilai sebelumnya
+2. Ulangi selama i masih lebih kecil dari jumlah elemen array
+3. Program melakukan loop lagi dari i = 0 sampai 9 Untuk setiap nilai array:
+   Jika nilaiAkhir[i] >= 70 (nilai lulus) → program mencetak nilai tersebut
+   Jika nilai < 70 → tidak dicetak (di-skip)
